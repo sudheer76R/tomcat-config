@@ -3,7 +3,7 @@ ver=`curl --silent http://mirror.vorboss.net/apache/tomcat/tomcat-9/ | grep v9 |
 sudo yum install -y java wget git
 cd /opt
 rm -rf apache*
-sudo wget https://downloads.apache.org/tomcat/tomcat-9/v${ver}/bin/apache-tomcat-${ver}.tar.gz
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz
 sudo tar xvzf apache-tomcat-9.*
 sudo rm -rf apache*.gz
 sudo git clone https://github.com/adhig93/tomcat-config
